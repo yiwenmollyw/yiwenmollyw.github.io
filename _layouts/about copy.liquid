@@ -5,7 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }} {{ site.last_name }}</span>
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -39,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- News -->
+    {% if page.news and site.announcements and site.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
 <!-- Current Research -->
         {% if page.current_research %}
       <h2>
@@ -47,9 +56,9 @@ layout: default
       {% include current_research.liquid limit=true %}
     {% endif %}
 
-<br>
-<!-- Selected papers -->
-      {% if page.selected_papers %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
@@ -57,4 +66,18 @@ layout: default
     {% endif %}
 
 
- 
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+  </article>
+</div>

@@ -3,7 +3,8 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Yiwen Molly
+first_name: Yiwen
+middle_name: Molly
 last_name: Wang
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -47,9 +48,9 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: false
-socials_in_search: false
-bib_search: false
+search_enabled: true
+socials_in_search: true
+bib_search: true
 
 # Dimensions
 max_width: 930px
@@ -146,12 +147,6 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
-  current_research:
-    defaults:
-      layout: post
-    output: true
-    permalink: /:collection/:title/
-  
   projects:
     output: true
     permalink: /:collection/:title/
@@ -633,20 +628,20 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# jekyll_get_json:
+#   - data: resume.a
+#     json: assets/json/resume.a.json # it can also be an url
 
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+# jsonresume.a:
+#   - basics
+#   - work
+#   - education
+#   - publications
+#   - projects
+#   - volunteer
+#   - awards
+#   - certificates
+#   - skills
+#   - languages
+#   - interests
+#   - references
