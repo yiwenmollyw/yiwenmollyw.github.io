@@ -22,7 +22,7 @@ Hi, I am a PhD candidate in the College of Information at the University of Mary
 My research explores technical solutions with and for marginalized populations, including older adults and people with disabilities, to support their independence, health, and wellbeing. My work informs strategies that bridge the gap between end users’ mental models and technical standards when applying AI methods in personal and health informatics systems.
 
 [[Google Scholar]](https://scholar.google.com/citations?user=LZwRvgMAAAAJ&hl=en)
-[[C.V.]](https://drive.google.com/open?id=1N9acxCg20gVQC9uW1jgiSxWyj1DYNqL3&usp=drive_copy)
+[[C.V.]](https://drive.google.com/file/d/1JKa3U-0WXQLhycf-RB4SIfQIK7yoD5v5/view?usp=drive_link)
 
 
 
